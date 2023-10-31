@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  scroll-margin-top: 20rem;
+}
+
+header .header__left {
+  max-width: 62rem;
+  flex: 1;
+}
+
+header .header__left p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 50rem;
+}
+
+header .header__right .header__image {
+  position: relative;
+  line-height: 0;
+}
+
+header .header__right .header__image::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 47%;
+  border: 1px solid var(--tertiary-color);
+  position: absolute;
+  top: -1rem;
+  right: 2rem;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+header .header__right .header__image .claudinei {
+  border-radius: 0.5rem;
+  min-width: 25rem;
+  max-width: 60%;
+  margin-bottom: 50rem;
+  margin-left: 20rem;
+}
+
+header .header__right .header__image .background {
+  position: absolute;
+  top: -2rem;
+  right: 3rem;
+  z-index: -1;
+}
