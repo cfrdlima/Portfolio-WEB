@@ -13,6 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   margin-top: 15rem;
+  background: linear-gradient(to bottom, #005b41, #0f0f0f);
 }
 
 ul {
