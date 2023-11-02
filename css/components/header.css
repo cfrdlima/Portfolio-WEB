@@ -16,6 +16,10 @@ header .header__left p {
   margin-top: 2rem;
   margin-bottom: 2rem;
   max-width: 50rem;
+  font-family: "Alata", sans-serif;
+}
+header .header__left h1 {
+  font-family: "ABeeZee", sans-serif;
 }
 
 header .header__right .header__image {
@@ -32,12 +36,12 @@ header .header__right .header__image::after {
   position: absolute;
   top: -1rem;
   right: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 0.9rem;
   z-index: -1;
 }
 
 header .header__right .header__image .claudinei {
-  border-radius: 0.5rem;
+  border-radius: 0.9rem;
   min-width: 25rem;
   max-width: 60%;
   margin-bottom: 50rem;
