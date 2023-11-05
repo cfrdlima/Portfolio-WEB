@@ -13,7 +13,7 @@ html {
 body {
   font-size: 1.6rem;
   margin-top: 15rem;
-  background: linear-gradient(to bottom, #005b41, #0f0f0f);
+  background: linear-gradient(to bottom, #005b97, #0f0f0f);
 }
 
 ul {
@@ -40,8 +40,8 @@ h1 {
 
 .tertiary-title {
   font-size: 3.2rem;
-  font-weight: 500;
-  line-height: 4.5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
   color: var(--aqua-color);
   font-family: "Alata", sans-serif;
 }
