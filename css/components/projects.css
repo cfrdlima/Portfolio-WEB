@@ -20,10 +20,11 @@
   margin-top: 10rem;
 }
 
-.projects .projects__info .tertiary-title {
+.projects .projects__info .projects-title {
+  font-family: "ABeeZee", sans-serif;
   color: var(--white);
-  margin-bottom: 23rem;
-  margin-right: 3.5rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .projects ul li.projects__reversed-list {
@@ -34,19 +35,27 @@
   margin-bottom: 12rem;
 }
 
-.projects ul li .image img {
-  max-width: 350px;
+.projects ul li .image-reversed img {
+  max-width: 500px;
   max-height: 700rem;
   margin-left: 3.5rem;
   margin-bottom: 13rem;
   opacity: 50%;
 }
 
-.projects ul li .projects__info {
-  max-width: 47rem;
+.projects ul li .image img {
+  max-width: 390px;
+  max-height: 700rem;
+  margin-left: 3.5rem;
+  margin-bottom: 13rem;
+  opacity: 50%;
 }
 
-.projects ul li .projects__info a {
-  font-weight: 500;
-  text-decoration: underline;
+.projects .projects__info {
+  max-width: 47rem;
+  margin-bottom: 14.5rem;
+}
+
+.projects .projects__info p {
+  margin-bottom: 7rem;
 }
