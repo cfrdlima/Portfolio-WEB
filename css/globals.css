@@ -65,8 +65,27 @@ p:not(:last-of-type),
   border: none;
   outline: none;
   padding: 1rem 4rem;
-  display: inline-block;
+  display: inline-flex;
   border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.btn__web-mobile {
+  background-color: none;
+  border: none;
+  outline: none;
+  padding: 1rem 4rem;
+  display: inline-flex;
+  border-radius: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.btn__web-mobile.style {
+  background-color: var(--light-tertiary-color);
+  color: var(--dark-secondary-color);
+  font-weight: 400;
+  font-size: 1.4rem;
+  font-family: "Alata", sans-serif;
 }
 
 .btn.btn-primary {
