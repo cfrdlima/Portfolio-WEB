@@ -25,11 +25,11 @@
   margin-left: 5rem;
 }
 
-.projects .projects__info-web .projects-title {
+.projects .projects__info-web .projects__web-title {
   font-family: "ABeeZee", sans-serif;
   color: var(--white);
   font-size: 3rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .projects .projects__info-web p {
@@ -37,13 +37,14 @@
   font-size: 15px;
 }
 
-.projects .projects__info .projects-title {
+.projects .projects__info-mobile .projects-title {
   font-family: "ABeeZee", sans-serif;
   color: var(--white);
   font-size: 3rem;
+  margin-top: 18rem;
 }
 
-.projects ul li.projects__reversed-list {
+.projects ul li.projects-mobile {
   flex-direction: row-reverse;
   margin-left: 3rem;
 }
@@ -52,7 +53,7 @@
   margin-bottom: -10rem;
 }
 
-.projects ul li .image-reversed img {
+.projects ul li .image-mobile img {
   max-width: 450px;
   max-height: 500rem;
   margin-left: 15rem;
@@ -76,24 +77,55 @@
   opacity: 50%;
 }
 
-.projects .projects__info {
+.projects .projects__info-mobile {
   max-width: 47rem;
   margin-bottom: 25rem;
 }
 
-.projects .projects__info p {
+.projects .projects__info-mobile p {
   margin-top: 5rem;
 }
 
-.projects .projects__reversed-list p {
+.projects .projects-mobile p {
   font-size: 15px;
   margin-bottom: 3rem;
 }
 
-.projects__reversed-list .projects__info {
+.projects-mobile .projects__info-mobile {
   margin-bottom: 35rem;
 }
 
-.projects__reversed-list .projects__info .projects-title {
-  margin-top: 18rem;
+@media only screen and (max-width: 768px) {
+  .projects ul li {
+    flex-direction: column;
+    margin-bottom: -5rem;
+  }
+
+  .projects ul li.projects-mobile {
+    flex-direction: column;
+    margin-right: 30rem;
+  }
+
+  .projects ul li.projects-mobile .image-mobile img {
+    max-width: 490px;
+    max-height: 700rem;
+    margin-left: 6.5rem;
+  }
+
+  .projects .projects__info-mobile {
+    margin-top: -30rem;
+  }
+
+  .projects .projects__info-web {
+    margin-top: -20rem;
+  }
+
+  .projects ul li .projects__info-web,
+  .projects ul li .projects__info-mobile {
+    max-width: 66rem;
+  }
+
+  .projects ul li .image-mobile {
+    min-width: auto;
+  }
 }
