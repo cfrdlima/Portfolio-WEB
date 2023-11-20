@@ -74,7 +74,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 368px) {
   .navbar .navbar__content .navbar__linksLeft,
   .navbar .navbar__content .navbar__linksRight {
     display: none;
