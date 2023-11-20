@@ -14,6 +14,7 @@ body {
   font-size: 1.6rem;
   margin-top: 15rem;
   background: linear-gradient(to bottom, #005b97, #0f0f0f);
+  overflow-x: hidden;
 }
 
 ul {

@@ -57,7 +57,6 @@ header .header__right .header__image .background {
 
 @media only screen and (max-width: 768px) {
   header {
-    background-color: brown;
     flex-direction: column-reverse;
     text-align: center;
   }
