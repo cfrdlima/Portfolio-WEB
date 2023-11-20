@@ -55,7 +55,7 @@ header .header__right .header__image .background {
   z-index: -1;
 }
 
-@media only screen and (max-width: 368px) {
+@media only screen and (max-width: 768px) {
   header {
     background-color: brown;
     flex-direction: column-reverse;
