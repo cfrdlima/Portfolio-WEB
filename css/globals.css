@@ -56,10 +56,10 @@ p,
   font-family: "Alata", sans-serif;
 }
 
-p:not(:last-of-type),
+/* p:not(:last-of-type),
 .p:not(:last-of-type) {
   margin-bottom: 2rem;
-}
+} */
 
 .btn {
   background-color: none;
@@ -68,20 +68,19 @@ p:not(:last-of-type),
   padding: 1rem 4rem;
   display: inline-flex;
   border-radius: 0.5rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
-.btn__web-mobile {
+.btn_mobile {
   background-color: none;
   border: none;
   outline: none;
   padding: 1rem 4rem;
   display: inline-flex;
   border-radius: 0.5rem;
-  margin-bottom: 5rem;
 }
 
-.btn__web-mobile.style {
+.btn_mobile.btn_mobile_style {
   background-color: var(--light-tertiary-color);
   color: var(--dark-secondary-color);
   font-weight: 400;

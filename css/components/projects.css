@@ -41,7 +41,7 @@
   font-family: "ABeeZee", sans-serif;
   color: var(--white);
   font-size: 3rem;
-  margin-top: 18rem;
+  margin-top: 16rem;
 }
 
 .projects ul li.projects-mobile {
@@ -54,11 +54,11 @@
 }
 
 .projects ul li .image-mobile img {
-  max-width: 450px;
+  max-width: 490px;
   max-height: 500rem;
   margin-left: 15rem;
-  margin-bottom: 20rem;
-  opacity: 50%;
+  margin-bottom: 18rem;
+  opacity: 70%;
 }
 
 .projects ul li .image-web img {
@@ -66,7 +66,7 @@
   max-height: 700rem;
   margin-left: 3.5rem;
   margin-bottom: 22rem;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .projects ul li .image-game img {
@@ -74,7 +74,7 @@
   max-height: 700rem;
   margin-left: 3.5rem;
   margin-bottom: 13rem;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .projects .projects__info-mobile {
@@ -82,13 +82,10 @@
   margin-bottom: 25rem;
 }
 
-.projects .projects__info-mobile p {
-  margin-top: 5rem;
-}
-
 .projects .projects-mobile p {
   font-size: 15px;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 }
 
 .projects-mobile .projects__info-mobile {
