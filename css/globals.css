@@ -109,11 +109,12 @@ p,
 }
 
 .mb-s {
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 
 .mb-m {
   margin-bottom: 2rem;
+  margin-left: -1rem;
 }
 
 .mb-l {
