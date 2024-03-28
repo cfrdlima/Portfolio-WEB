@@ -37,11 +37,11 @@
   font-family: "ABeeZee", sans-serif;
   color: var(--white);
   font-size: 3rem;
-  margin-top: 3rem;
+  margin-top: -3rem;
 }
 
 .projects .projects__info-web p {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-size: 15px;
 }
 
