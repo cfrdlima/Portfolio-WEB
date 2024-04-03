@@ -113,19 +113,21 @@
   }
 
   .projects ul li.projects-mobile .image-mobile img {
-    max-width: 300px;
-    max-height: 300rem;
-    margin-left: 0.5rem;
+    max-width: 350px;
+    max-height: 350rem;
+    margin-left: 2rem;
   }
 
   .projects ul li.projects-web .image-web img {
-    max-width: 300px;
-    max-height: 300rem;
-    margin-left: 3.5rem;
+    max-width: 350px;
+    max-height: 350rem;
+    margin-left: 5rem;
+    margin-right: 8rem;
   }
 
   .projects .projects__info-mobile {
     margin-top: -30rem;
+    margin-left: 2rem;
   }
 
   .projects .projects__info-web {
@@ -134,10 +136,14 @@
 
   .projects ul li .projects__info-web,
   .projects ul li .projects__info-mobile {
-    max-width: 66rem;
+    max-width: 38rem;
   }
 
   .projects ul li .image-mobile {
     min-width: auto;
+  }
+
+  .projects ul li .projects__info-web {
+    margin-left: -2.8rem;
   }
 }
