@@ -35,6 +35,7 @@
 
 .about .about__right p {
   font-family: "Alata", sans-serif;
+  margin-left: -1rem;
 }
 
 @media only screen and (max-width: 768px) {
