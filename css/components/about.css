@@ -49,6 +49,14 @@
     text-align: center;
   }
 
+  .about .about__left p {
+    text-align: justify;
+  }
+
+  .about .about__right p {
+    text-align: justify;
+  }
+
   .about__right {
     text-align: center;
   }

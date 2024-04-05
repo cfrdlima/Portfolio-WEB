@@ -43,6 +43,7 @@
 .projects .projects__info-web p {
   margin-bottom: 2rem;
   font-size: 15px;
+  width: 100%;
 }
 
 .projects .projects__info-mobile .projects-title {
@@ -102,54 +103,35 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .projects ul li {
-    flex-direction: column;
-    margin-bottom: -5rem;
-  }
-
+  .projects ul li,
   .projects ul li.projects-mobile {
     flex-direction: column;
-    margin-right: 30rem;
-  }
-
-  .projects ul li.projects-mobile .image-mobile img {
-    max-width: 350px;
-    max-height: 350rem;
-    margin-left: -1.5rem;
-    margin-bottom: 12rem;
-  }
-
-  .projects ul li.projects-web .image-web img {
-    max-width: 350px;
-    max-height: 350rem;
-    margin-left: 1.5rem;
-    margin-right: 8rem;
-  }
-
-  .projects .projects__info-mobile {
-    margin-top: -30rem;
-    margin-left: -1.8rem;
-    margin-bottom: 20rem;
-  }
-
-  .projects .projects__info-web {
-    margin-top: -20rem;
-  }
-
-  .projects ul li .projects__info-web,
-  .projects ul li .projects__info-mobile {
-    max-width: 38rem;
-  }
-
-  .projects ul li .image-mobile {
-    min-width: auto;
-  }
-
-  .projects ul li .projects__info-web {
-    margin-left: -6rem;
+    width: 100%;
   }
 
   .projects .projects__info-web p {
-    margin-bottom: 5rem;
+    margin: 3rem auto 5rem;
+  }
+
+  .projects ul li .image-web img,
+  .projects ul li .image-mobile img {
+    margin: 5rem auto 5rem;
+    width: 100%;
+  }
+
+  .projects ul li.projects-mobile {
+    margin: 5rem auto 5rem;
+  }
+
+  .projects .projects__info-mobile p {
+    margin: 3rem auto 5rem;
+  }
+
+  .projects-mobile .projects__info-mobile {
+    margin: 0rem auto 10rem;
+  }
+
+  .projects .projects__info-mobile .projects-title {
+    margin-top: 0rem;
   }
 }
