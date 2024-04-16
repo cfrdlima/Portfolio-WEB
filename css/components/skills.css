@@ -7,6 +7,30 @@
   text-align: center;
 }
 
+.skills__item-web {
+  position: relative;
+  border: 2px solid #ccc; /* Define a borda com 2px de largura e cor cinza */
+  padding: 20px; /* Adiciona um espaçamento interno para dar espaço à borda */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior entre cada item */
+  border-radius: 5%;
+}
+
+.skills__item-mobile {
+  position: relative;
+  border: 2px solid #ccc; /* Define a borda com 2px de largura e cor cinza */
+  padding: 20px; /* Adiciona um espaçamento interno para dar espaço à borda */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior entre cada item */
+  border-radius: 5%;
+}
+
+.skills__item-games {
+  position: relative;
+  border: 2px solid #ccc; /* Define a borda com 2px de largura e cor cinza */
+  padding: 20px; /* Adiciona um espaçamento interno para dar espaço à borda */
+  margin-bottom: 20px; /* Adiciona um espaçamento inferior entre cada item */
+  border-radius: 5%;
+}
+
 .skills .skills__content p {
   font-family: "Alata", sans-serif;
   font-size: 1.4rem;
@@ -26,6 +50,7 @@
 }
 
 .skills .skills__content ul li .image-container {
+  position: relative;
   background-color: var(--white);
   padding: 2rem;
   border-radius: 50%;
@@ -38,10 +63,23 @@
   margin: 0 auto;
   z-index: -1;
 }
-.skills .skills__content ul li .image-arrow {
+
+.skills .skills__content ul li .image-arrow-web {
   position: absolute;
-  margin-left: 30rem;
-  margin-top: -6rem;
+  top: 35px;
+  right: 10px;
+}
+
+.skills .skills__content ul li .image-arrow-mobile {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+}
+
+.skills .skills__content ul li .image-arrow-games {
+  position: absolute;
+  top: 35px;
+  right: 10px;
 }
 
 .skills .skills__content ul li h3 {
@@ -55,4 +93,30 @@
   font-weight: 700;
   color: var(--light-tertiary-color);
   font-family: "ABeeZee", sans-serif;
+}
+
+.rotate180-web {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease; /* Adiciona uma transição suave para o efeito de rotação */
+}
+
+.rotate180-mobile {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease; /* Adiciona uma transição suave para o efeito de rotação */
+}
+
+.rotate180-games {
+  transform: rotate(90deg);
+  transition: transform 0.5s ease; /* Adiciona uma transição suave para o efeito de rotação */
+}
+
+#info-div-web a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--light-tertiary-color);
+  font-family: "ABeeZee", sans-serif;
+  display: block;
+  padding-top: 2rem;
+  text-align: justify;
+  margin-left: 2rem;
 }
