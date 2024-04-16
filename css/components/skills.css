@@ -11,13 +11,17 @@
 .skills__item-mobile,
 .skills__item-games {
   position: relative;
-  transition: transform 0.3s ease;
+  transition: transform 0.6 ease;
+  transition: background-color 0.9s ease;
+  border-radius: 5%;
+  padding: 1.5rem 0;
 }
 
 .skills__item-web:hover,
 .skills__item-mobile:hover,
 .skills__item-games:hover {
   transform: scale(1.1);
+  background-color: rgb(4, 247, 252, 20%);
 }
 
 .skills .skills__content p {
@@ -99,7 +103,9 @@
   transition: transform 0.5s ease; /* Adiciona uma transição suave para o efeito de rotação */
 }
 
-#info-div-web a {
+#info-div-web a,
+#info-div-mobile a,
+#info-div-games a {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--light-tertiary-color);
