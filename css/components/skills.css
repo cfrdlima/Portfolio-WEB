@@ -103,14 +103,21 @@
   transition: transform 0.5s ease; /* Adiciona uma transição suave para o efeito de rotação */
 }
 
+#info-div-web {
+  margin: 4rem auto 0;
+}
+
 #info-div-web a,
 #info-div-mobile a,
 #info-div-games a {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--light-tertiary-color);
   font-family: "ABeeZee", sans-serif;
   display: flex;
-  margin: 2rem 4.5rem 0rem;
-  text-align: justify;
+  margin: 2rem auto 0rem;
+  text-align: center;
+  justify-content: center;
+}
+
+#info-div-web img,
+#info-div-games img {
+  padding: 5rem 1rem 1rem;
 }
