@@ -119,19 +119,14 @@ footer .footer__content .footer__form .footer__right {
 footer .footer__content .footer__form .footer__form__down {
   display: flex;
   flex-direction: column;
-}
-
-footer .footer__content .footer__form__down label,
-footer .footer__content .footer__form__down input,
-footer .footer__content .footer__form__down textarea,
-footer .footer__content .footer__form__down button {
-  display: block;
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
 }
 
 footer .footer__content .footer__form__down input,
 footer .footer__content .footer__form__down textarea,
 footer .footer__content .footer__form__down button {
-  width: 100%;
+  width: 25%;
   font: inherit;
   padding: 1.25rem;
   font-weight: 700;
@@ -157,4 +152,32 @@ footer .footer__content .footer__form__down textarea {
   resize: vertical;
   margin-bottom: 2rem;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .footer__content {
+    width: 100%;
+  }
+
+  footer .footer__content .footer__form {
+    width: 100%;
+  }
+
+  footer .footer__content .footer__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .footer__content .footer__form label {
+    text-align: center;
+  }
+
+  footer .footer__content .footer__form form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer .footer__content .footer__form .footer__form__right {
+    margin-bottom: 2rem;
+  }
 }
