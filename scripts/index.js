@@ -10,24 +10,27 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function addEvents(divGeral, arrowImage, infoDiv) {
-    // Adiciona eventos para a rotação da seta quando o mouse passa sobre divGeral
-    divGeral.addEventListener("mouseenter", function () {
-      toggleArrowRotation(arrowImage);
-    });
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      // Se a largura da tela for igual ou menor que 768 pixels, use o evento de clique
+      divGeral.addEventListener("click", function () {
+        toggleArrowRotation(arrowImage);
+        toggleInfoDiv(
+          infoDiv,
+          infoDiv.style.display === "block" ? "none" : "block"
+        );
+      });
+    } else {
+      // Caso contrário, use os eventos de mouseenter e mouseleave
+      divGeral.addEventListener("mouseenter", function () {
+        toggleArrowRotation(arrowImage);
+        toggleInfoDiv(infoDiv, "block");
+      });
 
-    divGeral.addEventListener("mouseleave", function () {
-      toggleArrowRotation(arrowImage);
-    });
-
-    // Adiciona evento para a exibição da div de informações quando o mouse passa sobre divGeral
-    divGeral.addEventListener("mouseenter", function () {
-      toggleInfoDiv(infoDiv, "block");
-    });
-
-    // Adiciona evento para a ocultação da div de informações quando o mouse sai de divGeral
-    divGeral.addEventListener("mouseleave", function () {
-      toggleInfoDiv(infoDiv, "none");
-    });
+      divGeral.addEventListener("mouseleave", function () {
+        toggleArrowRotation(arrowImage);
+        toggleInfoDiv(infoDiv, "none");
+      });
+    }
   }
 
   const divGeralWeb = document.querySelector(".skills__item-web");
