@@ -30,10 +30,90 @@ footer .footer__content .footer__copyright {
   font-size: 1.4rem;
 }
 
-footer .footer__contact .span__email {
+footer .footer__content .footer__form {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+
+footer .footer__contact .span__email,
+footer .footer__content .footer__form {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 3.5rem;
   color: #c0c9d1;
   font-family: "Alata", sans-serif;
+}
+
+footer .footer__content .footer__form form {
+  width: 100%;
+  max-width: 30rem;
+}
+
+footer .footer__content .footer__form label,
+footer .footer__content .footer__form input,
+footer .footer__content .footer__form textarea,
+footer .footer__content .footer__form button {
+  display: block;
+}
+
+footer .footer__content .footer__form input,
+footer .footer__content .footer__form textarea,
+footer .footer__content .footer__form button {
+  width: 100%;
+  font: inherit;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+
+footer .footer__content .footer__form input,
+footer .footer__content .footer__form textarea {
+  margin-bottom: 1rem;
+  color: white;
+  background: #323644;
+  border: 0.125rem solid transparent;
+  border-radius: 1.125rem;
+  transition: border-color 0.3s;
+  box-shadow: 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #1d90f5;
+  box-shadow: 0 0 0 0.3125rem #26344a;
+}
+
+footer .footer__content .footer__form label {
+  margin-bottom: 0.5;
+  color: #84868f;
+}
+
+footer .footer__content .footer__form textarea {
+  min-height: 12.5;
+  resize: vertical;
+  margin-bottom: 2rem;
+}
+
+footer .footer__content .footer__form button {
+  border: none;
+  border-radius: 99px;
+  color: white;
+  background: #1d90f5;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-bottom: 4rem;
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  background: #1c70d3;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background: #555b69;
 }
