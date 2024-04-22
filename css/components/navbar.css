@@ -6,6 +6,7 @@
   z-index: 10;
   padding: 0;
   font-family: "ABeeZee", sans-serif;
+  transition: 0.5s;
 }
 
 .navbar a:hover {

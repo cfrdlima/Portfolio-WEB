@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("scroll", function () {
-    if (this.window.scrollY > 0) return navbar.classList.add("active");
+    if (this.window.scrollY > 200) return navbar.classList.add("active");
     return navbar.classList.remove("active");
   });
 });
