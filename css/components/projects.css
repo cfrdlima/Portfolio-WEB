@@ -1,6 +1,8 @@
 .projects {
-  margin-bottom: 16rem;
-  scroll-margin-top: 15rem;
+  background-color: var(--background);
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
 .projects .projects__content {
@@ -9,90 +11,53 @@
   margin: 0 auto 6rem;
 }
 
-.projects .projects__content p {
-  max-width: 56rem;
-  text-align: center;
-  margin: 0 auto 6rem;
-  margin-top: 2rem;
+.gallery {
+  display: flex;
+  gap: 1rem;
+  max-width: 80rem;
 }
 
-.projects ul li {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10rem;
+.card {
+  position: relative;
+  left: 0;
+  width: 6rem;
+  border-radius: 1.2rem;
+  height: 20rem;
+  overflow: hidden;
+  background-color: var(--background);
+  transition: 0.4s ease-in-out;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  flex: 0.25;
 }
 
-.projects ul {
-  margin-top: 10rem;
+.card img {
+  position: relative;
+  height: 20rem;
+  object-fit: cover;
 }
 
-.projects .projects__info-web {
-  margin-bottom: 26rem;
+.card:hover {
+  flex: 2;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
 }
 
-.projects .projects__info-web .projects__web-title {
-  font-family: "ABeeZee", sans-serif;
-  color: var(--white);
-  font-size: 3rem;
+/* polish images center */
+.card:nth-child(1) img {
+  left: -8rem;
 }
 
-.projects .projects__info-web p {
-  margin-bottom: 2rem;
-  font-size: 15px;
-  width: 100%;
+.card:nth-child(2) img {
+  left: -6rem;
 }
 
-.projects .projects__info-mobile .projects-title {
-  font-family: "ABeeZee", sans-serif;
-  color: var(--white);
-  font-size: 3rem;
-  margin-top: 13rem;
+.card:nth-child(3) img {
+  left: -14rem;
 }
 
-.projects ul li.projects-mobile {
-  flex-direction: row-reverse;
-}
-
-.projects ul li {
-  margin-bottom: -10rem;
-}
-
-.projects ul li .image-mobile img {
-  max-width: 490px;
-  max-height: 500rem;
-  margin-bottom: 18rem;
-  opacity: 70%;
-}
-
-.projects ul li .image-web img {
-  max-width: 490px;
-  max-height: 700rem;
-  margin-bottom: 22rem;
-  opacity: 70%;
-}
-
-.projects ul li .image-game img {
-  max-width: 490px;
-  max-height: 700rem;
-  margin-bottom: 13rem;
-  opacity: 70%;
-}
-
-.projects .projects__info-mobile {
-  max-width: 47rem;
-  margin-bottom: 5rem;
-}
-
-.projects p {
-  font-size: 15px;
-  margin-top: 3rem;
-  margin-bottom: 6rem;
-  text-align: justify;
-}
-
-.projects-mobile .projects__info-mobile {
-  margin-bottom: 35rem;
+.card:nth-child(4) img {
+  left: -8rem;
 }
 
 @media only screen and (max-width: 768px) {
