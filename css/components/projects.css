@@ -8,21 +8,22 @@
 .projects .projects__content {
   max-width: 56rem;
   text-align: center;
-  margin: 0 auto 6rem;
+  margin: 15rem auto 2rem;
 }
 
 .gallery {
   display: flex;
   gap: 1rem;
-  max-width: 80rem;
+  max-width: 120rem;
+  height: 50rem;
 }
 
 .card {
-  position: relative;
+  display: flex;
   left: 0;
-  width: 6rem;
+  width: 120rem;
   border-radius: 1.2rem;
-  height: 20rem;
+  height: 50rem;
   overflow: hidden;
   background-color: var(--background);
   transition: 0.4s ease-in-out;
@@ -30,9 +31,22 @@
   flex: 0.25;
 }
 
+.card .info-project h2 {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.card .info-project p {
+  text-align: justify;
+  padding: 2rem;
+}
+
 .card img {
   position: relative;
-  height: 20rem;
+  height: 50rem;
+  width: 55rem;
+  transition: filter 0.5s ease;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -44,21 +58,21 @@
 }
 
 /* polish images center */
-.card:nth-child(1) img {
+/* .card:nth-child(1) img {
   left: -8rem;
-}
+} */
 
-.card:nth-child(2) img {
+/* .card:nth-child(2) img {
   left: -6rem;
-}
+} */
 
-.card:nth-child(3) img {
+/* .card:nth-child(3) img {
   left: -14rem;
-}
+} */
 
-.card:nth-child(4) img {
+/* .card:nth-child(4) img {
   left: -8rem;
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .projects ul li,
