@@ -16,6 +16,7 @@
   gap: 1rem;
   max-width: 120rem;
   height: 50rem;
+  margin-top: 5rem;
 }
 
 .card {
@@ -29,6 +30,10 @@
   transition: 0.4s ease-in-out;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
   flex: 0.25;
+}
+
+.card .info-project {
+  padding-right: 2rem;
 }
 
 .card .info-project h2 {
@@ -51,28 +56,18 @@
 }
 
 .card:hover {
-  flex: 2;
+  flex: 4;
   font-weight: bold;
   cursor: pointer;
   border-radius: 1rem;
+  transform: scale(1.05);
+  filter: none;
 }
 
-/* polish images center */
-/* .card:nth-child(1) img {
-  left: -8rem;
-} */
-
-/* .card:nth-child(2) img {
-  left: -6rem;
-} */
-
-/* .card:nth-child(3) img {
-  left: -14rem;
-} */
-
-/* .card:nth-child(4) img {
-  left: -8rem;
-} */
+.card:not(:hover) {
+  filter: blur(2px);
+  transition: 0.3 ease-in-out;
+}
 
 @media only screen and (max-width: 768px) {
   .projects ul li,
