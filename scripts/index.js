@@ -9,6 +9,32 @@ document.addEventListener("DOMContentLoaded", function () {
     infoDiv.style.display = displayValue;
   }
 
+  function addEventsNoArrow(card) {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      card.addEventListener("mouseenter", function () {
+        const p = card.querySelector("p");
+        const h2 = card.querySelector("h2");
+        p.style.display = "block";
+        card.style.transition = "0.3s ease-in-out";
+        h2.style.textAlign = "justify";
+      });
+
+      card.addEventListener("mouseleave", function () {
+        const p = card.querySelector("p");
+        const h2 = card.querySelector("h2");
+        p.style.display = "none";
+        card.style.transition = "0.3s ease-in-out";
+        h2.style.textAlign = "center";
+      });
+    }
+  }
+
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(function (card) {
+    addEventsNoArrow(card);
+  });
+
   function addEvents(divGeral, arrowImage, infoDiv) {
     if (window.matchMedia("(max-width: 768px)").matches) {
       // Se a largura da tela for igual ou menor que 768 pixels, use o evento de clique
@@ -47,6 +73,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const arrowImageGames = document.getElementById("rotating-arrow-games");
   const infoDivGames = document.getElementById("info-div-games");
   addEvents(divGeralGames, arrowImageGames, infoDivGames);
+
+  // console.log("O código está sendo executado");
+  // const width = divCardProjectsMobile.offsetWidth;
+  // const height = divCardProjectsMobile.offsetHeight;
+
+  // console.log(`A largura da div.card é ${width}px e a altura é ${height}px.`);
 
   // Adiciona eventos para a barra de navegação e o botão de menu
   const navbar = document.querySelector(".navbar");
