@@ -54,6 +54,12 @@
   padding: 2rem;
 }
 
+.card .info-project .buttonProject {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
 .card img {
   position: relative;
   height: 50rem;
