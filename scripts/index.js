@@ -59,6 +59,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  const toggle = document.getElementById("toggle");
+  toggle.onclick = function () {
+    toggle.classList.toggle("active");
+  };
+
   const divGeralWeb = document.querySelector(".skills__item-web");
   const arrowImageWeb = document.getElementById("rotating-arrow-web");
   const infoDivWeb = document.getElementById("info-div-web");

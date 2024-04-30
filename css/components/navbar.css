@@ -9,6 +9,29 @@
   transition: 0.5s;
 }
 
+.navbar ul div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: aqua;
+  padding: 5px;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 3rem;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul.translate.divToggle img {
+  position: relative;
+  max-width: 32px;
+  max-height: 32px;
+  margin-left: auto;
+}
+
+#toggle.active .imgToggle {
+  margin-left: auto;
+}
+
 .navbar a:hover {
   color: var(--tertiary-color);
 }
@@ -31,13 +54,11 @@
 
 .navbar .navbar__linksLeft {
   position: absolute;
-  margin-left: 2rem;
   display: inline-block;
 }
 
 .navbar .navbar__linksLeft li {
   display: inline-block;
-  margin-right: 2rem;
 }
 
 .navbar .navbar__linksLeft a {
@@ -47,18 +68,16 @@
 
 .navbar .navbar__linksRight {
   position: relative;
-  margin-right: 1rem;
-  display: inline-block;
-}
-
-.navbar .navbar__linksRight li:not(:last-of-type) {
-  display: inline-block;
-  margin-right: 2rem;
+  display: flex;
 }
 
 .navbar .navbar__linksRight a {
   padding: 1rem;
   display: inline-block;
+}
+
+.navbar .navbar__linksRight a:last-of-type {
+  padding-right: 2rem;
 }
 
 .navbar.active {
