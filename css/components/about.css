@@ -15,10 +15,6 @@
   font-family: "Alata", sans-serif;
 }
 
-.about .about__left ul {
-  margin-left: -1.2rem;
-}
-
 .about .about__left li {
   display: inline-block;
 }
@@ -35,7 +31,6 @@
 
 .about .about__right p {
   font-family: "Alata", sans-serif;
-  margin-left: -1rem;
 }
 
 @media only screen and (max-width: 768px) {

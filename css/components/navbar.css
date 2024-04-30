@@ -19,13 +19,15 @@
   height: 4rem;
   border-radius: 3rem;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  transition: src 0.5s ease;
 }
 
-.navbar ul.translate.divToggle img {
+.navbar ul.translate .divToggle img {
   position: relative;
   max-width: 32px;
   max-height: 32px;
   margin-left: auto;
+  transition: src 0.5s ease;
 }
 
 #toggle.active .imgToggle {

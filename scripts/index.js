@@ -62,6 +62,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.getElementById("toggle");
   toggle.onclick = function () {
     toggle.classList.toggle("active");
+    if (toggle.classList.contains("active")) {
+      document.querySelector(".imgToggle").src = "assets/usa.png";
+      toggle.style.backgroundColor = "#FFFBDA";
+    } else {
+      document.querySelector(".imgToggle").src = "assets/brasil.png";
+      toggle.style.backgroundColor = "aqua";
+    }
   };
 
   const divGeralWeb = document.querySelector(".skills__item-web");
