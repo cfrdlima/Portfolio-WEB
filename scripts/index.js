@@ -9,12 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
     infoDiv.style.display = displayValue;
   }
 
+  const cards = document.querySelectorAll(".card");
+  const primeiraCard = document.querySelector(".card");
+  const segundaCard = document.querySelectorAll(".card")[1];
+
+  cards.forEach(function (card) {
+    addEventsNoArrow(card);
+  });
+
   function addEventsNoArrow(card) {
     if (window.matchMedia("(max-width: 768px)").matches) {
       card.addEventListener("mouseenter", function () {
-        const p = card.querySelector("p");
         const h2 = card.querySelector("h2");
+        const a = card.querySelector("a");
+        const p = card.querySelector("p");
+        const primeiroParagrafo = primeiraCard.querySelector("p");
+        const segundoParagrafo = segundaCard.querySelector("p");
+        primeiroParagrafo.style.fontSize = "11.2px";
+        segundoParagrafo.style.fontSize = "12px";
         p.style.display = "block";
+        a.style.display = "block";
         card.style.transition = "0.3s ease-in-out";
         h2.style.textAlign = "justify";
       });
@@ -22,18 +36,19 @@ document.addEventListener("DOMContentLoaded", function () {
       card.addEventListener("mouseleave", function () {
         const p = card.querySelector("p");
         const h2 = card.querySelector("h2");
+        const a = card.querySelector("a");
         p.style.display = "none";
+        a.style.display = "none";
         card.style.transition = "0.3s ease-in-out";
         h2.style.textAlign = "center";
       });
+    } else {
+      const primeiroParagrafo = primeiraCard.querySelector("p");
+      const segundoParagrafo = segundaCard.querySelector("p");
+      primeiroParagrafo.style.fontSize = "1.6rem";
+      segundoParagrafo.style.fontSize = "1.6rem";
     }
   }
-
-  const cards = document.querySelectorAll(".card");
-
-  cards.forEach(function (card) {
-    addEventsNoArrow(card);
-  });
 
   function addEvents(divGeral, arrowImage, infoDiv) {
     if (window.matchMedia("(max-width: 768px)").matches) {
@@ -85,12 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const arrowImageGames = document.getElementById("rotating-arrow-games");
   const infoDivGames = document.getElementById("info-div-games");
   addEvents(divGeralGames, arrowImageGames, infoDivGames);
-
-  // console.log("O código está sendo executado");
-  // const width = divCardProjectsMobile.offsetWidth;
-  // const height = divCardProjectsMobile.offsetHeight;
-
-  // console.log(`A largura da div.card é ${width}px e a altura é ${height}px.`);
 
   // Adiciona eventos para a barra de navegação e o botão de menu
   const navbar = document.querySelector(".navbar");
