@@ -80,9 +80,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (toggle.classList.contains("active")) {
       document.querySelector(".imgToggle").src = "assets/usa.png";
       toggle.style.backgroundColor = "#FFFBDA";
+      trocarIdioma("scripts/en");
     } else {
       document.querySelector(".imgToggle").src = "assets/brasil.png";
       toggle.style.backgroundColor = "aqua";
+      trocarIdioma("scripts/pt");
     }
   };
 
