@@ -74,18 +74,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  // Selecione o elemento de toggle
   const toggle = document.getElementById("toggle");
-  toggle.onclick = function () {
+
+  toggle.addEventListener("click", function () {
     toggle.classList.toggle("active");
+
     if (toggle.classList.contains("active")) {
       document.querySelector(".imgToggle").src = "assets/usa.png";
       toggle.style.backgroundColor = "#FFFBDA";
-      consumirAPIGoogleTranslate();
+      consumirAPIGoogleTranslateEn(true);
     } else {
       document.querySelector(".imgToggle").src = "assets/brasil.png";
       toggle.style.backgroundColor = "aqua";
+      consumirAPIGoogleTranslateEn(false);
     }
-  };
+  });
 
   const divGeralWeb = document.querySelector(".skills__item-web");
   const arrowImageWeb = document.getElementById("rotating-arrow-web");
