@@ -83,11 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (toggle.classList.contains("active")) {
       document.querySelector(".imgToggle").src = "assets/usa.png";
       toggle.style.backgroundColor = "#FFFBDA";
-      consumirAPIGoogleTranslateEn(true);
-    } else {
-      document.querySelector(".imgToggle").src = "assets/brasil.png";
-      toggle.style.backgroundColor = "aqua";
-      consumirAPIGoogleTranslateEn(false);
+      consumirAPIMicrosoftTranslateEn();
     }
   });
 
