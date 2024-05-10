@@ -54,6 +54,12 @@
   padding: 2rem;
 }
 
+.card .info-project .buttonProject {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
 .card img {
   position: relative;
   height: 50rem;
@@ -106,6 +112,15 @@
   .card .info-project p {
     padding: 0;
     padding-left: 2rem;
+    display: none;
+  }
+
+  .card .info-project .buttonProject {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card .buttonProject a {
     display: none;
   }
 
